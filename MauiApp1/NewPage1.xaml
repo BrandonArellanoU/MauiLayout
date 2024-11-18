@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        
+            <Grid HorizontalOptions="Center" 
+              VerticalOptions="Center"
+              HeightRequest="200" 
+              WidthRequest="300">
+            <Grid.RowDefinitions>
+                        <RowDefinition  />
+                        <RowDefinition  />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                        <ColumnDefinition  />
+                        <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView Color="#d0ece7"
+                     Grid.Column="0"
+                     Grid.Row="0"/>
+            <Label Text="Column 0, Row 0"
+                   TextColor="#2c3e50" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <BoxView Grid.Column="1"
+                     Grid.Row="0"
+                     Color="#f9e79f" />
+            <Label Grid.Column="1"
+                   Text="Column 1, Row 0"
+                   TextColor="#2c3e50"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <BoxView Grid.ColumnSpan="1"
+                     Grid.Row="1"
+                     Color="Pink" />
+            <Label Grid.Row="1"
+                   Text="Column 0, Row 1"
+                   TextColor="#2c3e50"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+            <BoxView Grid.Row="1"
+                     Grid.Column="1"
+                     Color="LightBlue" />
+            <Label Grid.Column="1"
+                   Grid.Row="1"
+                   Text="Column 1, Row 1"
+                   TextColor="#2c3e50"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center" />
+        </Grid>
+        
+        <Button
+            x:Name="btn1"
+            Text="Página 2" 
+            Clicked="btn1_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
