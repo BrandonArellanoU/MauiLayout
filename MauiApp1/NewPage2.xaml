@@ -3,26 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.NewPage2"
              Title="NewPage2">
+    <ScrollView>
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Página 2 StackLayout"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
             <StackLayout Margin="20">
-                <Label Text="Primary colors" />
-                <BoxView Color="Red"
+            <Label
+                Text="Programación Web y Móvil"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level8" />
+
+            <Label
+                Text="Desarrollado por &#10; Brandon Arellano"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+
+            <Label Text="Colombia" />
+            <BoxView Color="Yellow"
                  HeightRequest="40" />
-                <BoxView Color="Yellow"
+                <BoxView Color="blue"
+                 HeightRequest="40" />
+                <BoxView Color="red"
+                 HeightRequest="40" />
+                
+                <Label Text="Rusia" />
+                <BoxView Color="White"
                  HeightRequest="40" />
                 <BoxView Color="Blue"
                  HeightRequest="40" />
-                <Label Text="Secondary colors" />
-                <BoxView Color="Green"
-                 HeightRequest="40" />
-                <BoxView Color="Orange"
-                 HeightRequest="40" />
-                <BoxView Color="Purple"
+                <BoxView Color="red"
                  HeightRequest="40" />
             </StackLayout>
  
@@ -32,4 +46,5 @@
             Clicked="btn1_Clicked" />
                 
     </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

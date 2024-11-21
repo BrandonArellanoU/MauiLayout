@@ -6,4 +6,8 @@ public partial class NewPage4 : ContentPage
 	{
 		InitializeComponent();
 	}
+    private void btn1_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new NewPage1());
+    }
 }
