@@ -6,44 +6,21 @@
 
     <ScrollView>
         <FlexLayout Direction="Column"
-                    JustifyContent="Start"
-                    AlignItems="Start"
-                    Padding="10">
-
-            <!-- Elemento 1 -->
-            <Frame Margin="5"
-                   Padding="10"
-                   HasShadow="True"
-                   BorderColor="LightGray"
-                   GestureRecognizers="{Binding Source={x:Type GestureRecognizer}, Path=TappedCommand, Mode=OneWay}">
-                <FlexLayout Direction="Row" AlignItems="Center">
-                    <Image Source="imagen1.png" WidthRequest="50" HeightRequest="50" Margin="10"/>
-                    <Label Text="Elemento 1" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
-                </FlexLayout>
-            </Frame>
-
-            <!-- Elemento 2 -->
-            <Frame Margin="5"
-                   Padding="10"
-                   HasShadow="True"
-                   BorderColor="LightGray">
-                <FlexLayout Direction="Row" AlignItems="Center">
-                    <Image Source="imagen2.png" WidthRequest="50" HeightRequest="50" Margin="10"/>
-                    <Label Text="Elemento 2" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
-                </FlexLayout>
-            </Frame>
-
-            <!-- Elemento 3 -->
-            <Frame Margin="5"
-                   Padding="10"
-                   HasShadow="True"
-                   BorderColor="LightGray">
-                <FlexLayout Direction="Row" AlignItems="Center">
-                    <Image Source="imagen3.png" WidthRequest="50" HeightRequest="50" Margin="10"/>
-                    <Label Text="Elemento 3" VerticalOptions="Center" HorizontalOptions="StartAndExpand"/>
-                </FlexLayout>
-            </Frame>
-
+                AlignItems="Center"
+                JustifyContent="SpaceEvenly">
+            <Label Text="FlexLayout in Action"
+               FontSize="18" />
+            <Image Source="dotnet_bot.png"
+               HeightRequest="300" />
+            <Image Source="carro1.png"
+                HeightRequest="300" />
+            <Image Source="carro2.png"
+                HeightRequest="300" />
+            <Button
+            x:Name="btn1"
+            Text="Pagina 4" 
+            Clicked="btn1_Clicked" />
+            <Label Text="Another Label" />
         </FlexLayout>
     </ScrollView>
 </ContentPage>
